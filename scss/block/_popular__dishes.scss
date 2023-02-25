@@ -1,0 +1,70 @@
+.popular__dishes{
+    margin-top: 150px;
+    background-color: #F6F5F5;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    &--name{
+        text-align: center;
+        font-size: 55px;
+        padding-bottom: 55px;
+    }
+    &--btn{
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        border: 1px solid gray; 
+        padding: 25px 35px;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            background: black;
+            color: white;
+        }
+    }
+}
+
+.popular{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    &__vegetable{
+        width: 450px;
+        &--img{
+            width: 450px;
+            height: 300px;
+        }
+        &--inf{
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            color: black;
+            padding-top: 25px;
+        }
+        &--large{
+            padding-top: 35px;
+            padding-right: 35px;
+            color: black;
+            font-size: 15px;
+        }
+    }
+    &__meals{
+        width: 450px;
+        &--img{
+            width: 450px;
+            height: 300px;
+        }
+        &--inf{
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            color: black;
+            padding-top: 25px;
+        }
+        &--large{
+            padding-top: 35px;
+            padding-right: 35px;
+            color: black;
+            font-size: 15px;
+        }
+    }
+}

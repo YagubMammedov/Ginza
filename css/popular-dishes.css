@@ -1,0 +1,17 @@
+.popolar_dishes {
+  margin-top: 150px;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.popular-vegetable--img {
+  width: 400px;
+  height: 400px;
+}
+.popular-meals--img {
+  width: 400px;
+  height: 400px;
+}/*# sourceMappingURL=popular-dishes.css.map */

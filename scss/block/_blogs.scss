@@ -1,0 +1,39 @@
+.memories{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    margin-top: 50px;
+    &__img{
+        &--pic{
+            height: 600px;
+            width: 550px;
+        }        
+    }
+    &__inform{
+        width: 350px ;
+       h1{
+        //    text-align: center;
+           font-size: 45px;
+        }
+
+        span{
+            font-size: 15px;
+        }
+
+        &--btn{
+            margin-top: 45px;
+            font-size: 20px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px 60px;
+            cursor: pointer;
+            margin: auto;
+            margin-top: 40px;
+            
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

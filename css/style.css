@@ -1,0 +1,908 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+.container__main {
+  margin: 0 50px;
+}
+
+.header {
+  background-image: url(../img/header/fon.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.header__menu--logo {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+.header__menu--img {
+  display: none;
+}
+.header__navbar {
+  font-size: 20px;
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.header__navbar span {
+  color: white;
+}
+.header__slogan {
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  margin: 50px 150px;
+}
+.header__share {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 150px;
+}
+.header__share img {
+  cursor: pointer;
+}
+.header__share--twit {
+  height: 30px;
+  width: 30px;
+}
+.header__share--face {
+  height: 30px;
+  width: 30px;
+}
+.header__share--insta {
+  height: 30px;
+  width: 30px;
+}
+
+.memories {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  margin-top: 50px;
+}
+.memories__img--pic {
+  height: 600px;
+  width: 550px;
+}
+.memories__inform {
+  width: 350px;
+}
+.memories__inform h1 {
+  font-size: 45px;
+}
+.memories__inform span {
+  font-size: 15px;
+}
+.memories__inform--btn {
+  margin-top: 45px;
+  font-size: 20px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 60px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 40px;
+}
+.memories__inform--btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.popular__dishes {
+  margin-top: 150px;
+  background-color: #F6F5F5;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.popular__dishes--name {
+  text-align: center;
+  font-size: 55px;
+  padding-bottom: 55px;
+}
+.popular__dishes--btn {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 25px 35px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.popular__dishes--btn:hover {
+  background: black;
+  color: white;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.popular__vegetable {
+  width: 450px;
+}
+.popular__vegetable--img {
+  width: 450px;
+  height: 300px;
+}
+.popular__vegetable--inf {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: black;
+  padding-top: 25px;
+}
+.popular__vegetable--large {
+  padding-top: 35px;
+  padding-right: 35px;
+  color: black;
+  font-size: 15px;
+}
+.popular__meals {
+  width: 450px;
+}
+.popular__meals--img {
+  width: 450px;
+  height: 300px;
+}
+.popular__meals--inf {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: black;
+  padding-top: 25px;
+}
+.popular__meals--large {
+  padding-top: 35px;
+  padding-right: 35px;
+  color: black;
+  font-size: 15px;
+}
+
+.main {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.main__family {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+}
+.main__family--food {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main__family--food__name {
+  font-size: 40px;
+  line-height: 80px;
+}
+.main__family--food__inf {
+  font-size: 20px;
+}
+.main__light {
+  display: flex;
+  gap: 250px;
+}
+.main__light--food {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  width: 380px;
+}
+.main__light--food__name {
+  font-size: 40px;
+  line-height: 60px;
+}
+.main__light--food__inf {
+  font-size: 20px;
+}
+.main__animal {
+  display: flex;
+  gap: 250px;
+}
+.main__animal--food {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.main__animal--food__name {
+  font-size: 40px;
+  line-height: 60px;
+}
+.main__animal--food__inf {
+  font-size: 20px;
+}
+
+.book {
+  background-color: #F6F5F5;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: center;
+  color: black;
+}
+.book h1 {
+  font-size: 45px;
+}
+.book__inf {
+  font-size: 13px;
+  width: 350px;
+  line-height: 20px;
+}
+.book button {
+  border: 1px solid black;
+  padding: 20px 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.book button:hover {
+  color: white;
+  background: black;
+}
+
+.footer {
+  background: black;
+  color: white;
+}
+
+.finish {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.finish__company--name {
+  font-size: 45px;
+  padding-top: 10px;
+}
+.finish__company--img {
+  display: flex;
+  gap: 20px;
+  padding-top: 45px;
+}
+.finish__company--img img {
+  cursor: pointer;
+}
+.finish__inf {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  font-size: 15px;
+}
+.finish__inf--links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.finish__inf--links span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.finish__inf--contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.finish__inf--hours {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.finish__inf--location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .memories h1 {
+    font-size: 30px;
+  }
+  .memories__img--pic {
+    width: 500px;
+    height: 500px;
+  }
+  .popular__dishes--btn {
+    margin-top: 100px;
+  }
+  .popular__vegetable {
+    width: 350px;
+  }
+  .popular__vegetable--img {
+    width: 350px;
+    height: 250px;
+  }
+  .popular__meals {
+    width: 350px;
+  }
+  .popular__meals--img {
+    width: 350px;
+    height: 250px;
+  }
+  .main__family--food {
+    gap: 10px;
+  }
+  .main__family--food__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main__family--food__inf {
+    font-size: 15px;
+  }
+  .main__family--img {
+    width: 500px;
+    height: 500px;
+  }
+  .main__light--food {
+    gap: 10px;
+  }
+  .main__light--food__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main__light--food__inf {
+    font-size: 15px;
+  }
+  .main__light--img {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+  }
+  .main__animal--food {
+    gap: 10px;
+  }
+  .main__animal--food__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main__animal--food__inf {
+    font-size: 15px;
+  }
+  .main__animal--img {
+    width: 450px;
+    height: 500px;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 991px) {
+  .memories {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 900px;
+  }
+  .memories__img--pic {
+    height: 450px;
+    width: 400px;
+  }
+  .memories__inform--btn {
+    margin-top: 45px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  .popular__dishes--name {
+    font-size: 35px;
+  }
+  .popular__dishes--btn {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 20px 30px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular__vegetable {
+    width: 350px;
+  }
+  .popular__vegetable--img {
+    width: 350px;
+    height: 250px;
+  }
+  .popular__vegetable--inf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .popular__vegetable--large {
+    font-size: 14px;
+  }
+  .popular__meals {
+    width: 350px;
+  }
+  .popular__meals--img {
+    width: 350px;
+    height: 250px;
+    margin-top: 30px;
+  }
+  .popular__meals--inf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .popular__meals--large {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .main__family {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 70px;
+  }
+  .main__family--img {
+    width: 380px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main__family--food {
+    width: 380px;
+    align-items: center;
+  }
+  .main__family--food__name {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .main__family--food__inf {
+    font-size: 15px;
+  }
+  .main__light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    margin-top: 60px;
+  }
+  .main__light--img {
+    width: 380px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main__light--food__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .main__light--food__inf {
+    font-size: 15px;
+  }
+  .main__animal {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 70px;
+    margin-top: 60px;
+  }
+  .main__animal--img {
+    width: 380px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main__animal--food {
+    width: 380px;
+  }
+  .main__animal--food__name {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .main__animal--food__inf {
+    font-size: 15px;
+  }
+  .finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+  }
+  .finish__inf {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+  }
+  .header__menu--logo {
+    font-size: 25px;
+  }
+  .header__menu--img {
+    display: block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .header__slogan {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 50px 100px;
+  }
+  .header__share {
+    height: 50px;
+    margin-bottom: 90px;
+  }
+  .memories {
+    margin-top: 80px;
+  }
+  .memories__img--pic {
+    height: 450px;
+    width: 400px;
+  }
+  .memories__inform--btn {
+    margin-top: 45px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  .finish {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: flex-start;
+  }
+  .finish__inf {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .memories {
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
